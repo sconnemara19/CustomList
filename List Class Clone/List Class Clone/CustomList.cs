@@ -11,7 +11,6 @@ namespace List_Class_Clone
         private T[] items;
         private int count;
         private int capacity;
-        private T[] array;
 
         public CustomList()
         {
@@ -33,12 +32,14 @@ namespace List_Class_Clone
         }
         public void IncreaseCapcity()
         {
-            items = new T[4];
-            array = new T[8];
+            capacity = capacity * 2;
+
+            T[] array = new T[capacity];
             for (int i = 0; i < items.Length; i++)
             {
                 array[i] = items[i];
-            }
+            } 
+            items = array;
         }
 
 
