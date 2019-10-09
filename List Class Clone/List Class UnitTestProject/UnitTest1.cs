@@ -57,19 +57,27 @@ namespace List_Class_UnitTestProject
           
         }
 
-        public void Add_AddMultipleitemstoList_CheckPosition()
+        public void Add_AdditemstoList_CheckPosition()
         {
             //arrange
             CustomList<int> testList = new CustomList<int>();
-            int expected =;
-            int actual =;
+            int expected = 23;
+            
 
 
             //act
 
-            testList.Add 
+            testList.Add(56);
+            testList.Add(43);
+            testList.Add(87);
+            testList.Add(90);
+            testList.Add(44);
+            testList.Add(23);
+            testList.Add(6);
 
+            int actual = testList[5];
 
+            Assert.AreEqual(expected, actual);
         }
 
 
