@@ -4,14 +4,17 @@ using List_Class_Clone;
 namespace List_Class_UnitTestProject
 {
     [TestClass]
-    public class ListClassUnitTest1<T>
+    public class ListClassUnitTest1
     {
         [TestMethod]
+
+       
         public void Add_AddToEmptyList_ItemGoesToIndexZero()
         {
-            //arrange
+        //arrange
 
-            CustomList<int> testList = new CustomList<int>();
+
+        CustomList<int> testList = new CustomList<int>();
             int expected = 12;
             int actual;
 
@@ -57,6 +60,7 @@ namespace List_Class_UnitTestProject
           
         }
 
+        [TestMethod]
         public void Add_AdditemstoList_CheckPosition()
         {
             //arrange
@@ -78,6 +82,64 @@ namespace List_Class_UnitTestProject
             int actual = testList[5];
 
             Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_RemoveTheFirstOccurence()
+
+        {
+            //arrange 
+            CustomList<int> testList = new CustomList<int>();
+            int expected = 19;
+
+            //act
+
+            testList.Add(60);
+            testList.Add(23);
+            testList.Add(86);
+            testList.Add(19);
+            testList.Add(44);
+            testList.Add(19);
+            testList.Remove(19);
+
+            int actual = testList[4];
+
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_Removebaseon_Value()
+        {
+            //arrange
+            CustomList<int> testList = new CustomList<int>();
+            int expected = 23;
+
+            testList.Add(12);
+            testList.Add(43);
+            testList.Add(88);
+            testList.Add(90);
+            testList.Add(10);
+            testList.Add(23);
+            testList.Add(6);
+            testList.Remove(10);
+
+            int actual = testList[4];
+            Assert.AreEqual(expected,actual);
+        }
+        [TestMethod]
+        public void Remove_RemoveFromEmptyList_ToCheckPosition()
+        {
+            //arrange
+            CustomList<int> testlist = new CustomList<int>();
+
+            int expected = 0;
+            int actual;
+
+            //act
+            testlist.Remove(0);
+            actual = testlist.Count;
+            //assert
+            Assert.AreEqual(expected, actual);
+
+
         }
 
 

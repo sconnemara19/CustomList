@@ -1,0 +1,16 @@
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\List Class UnitTestProject.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\List Class UnitTestProject.pdb
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\List Class Clone.exe
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\List Class Clone.pdb
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\List Class Clone.exe.config
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\obj\Debug\List Class UnitTestProject.csprojAssemblyReference.cache
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\obj\Debug\List Class UnitTestProject.csproj.CopyComplete
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\obj\Debug\List Class UnitTestProject.dll
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class UnitTestProject\obj\Debug\List Class UnitTestProject.pdb

@@ -17,7 +17,28 @@ namespace List_Class_Clone
             count = 0;
             capacity = 4;
             items = new T[capacity];
+
+           
         }
+
+        public T this[int i]
+        {
+            get { return items[i]; }
+            set { items[i] = value; }
+        }
+       public int Count
+        {
+            get
+            {
+                return count;
+            }
+        }
+
+
+
+
+
+
         public void Add(T itemToAdd)
         {  
             items[count] = itemToAdd;
@@ -40,6 +61,10 @@ namespace List_Class_Clone
                 array[i] = items[i];
             } 
             items = array;
+        }
+        public void Remove(T itemToRemov)
+        {
+
         }
 
 
