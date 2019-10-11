@@ -11,14 +11,14 @@ namespace List_Class_Clone
         private T[] items;
         private int count;
         private int capacity;
-       
+
         public CustomList()
         {
             count = 0;
             capacity = 4;
             items = new T[capacity];
-           
-           
+
+
         }
 
         public T this[int i]
@@ -26,7 +26,7 @@ namespace List_Class_Clone
             get { return items[i]; }
             set { items[i] = value; }
         }
-       public int Count
+        public int Count
         {
             get
             {
@@ -40,7 +40,7 @@ namespace List_Class_Clone
 
 
         public void Add(T itemToAdd)
-        {  
+        {
             items[count] = itemToAdd;
             count++;
             if (count == capacity)
@@ -48,8 +48,8 @@ namespace List_Class_Clone
                 IncreaseCapcity();
 
             }
-           
-            
+
+
         }
         public void IncreaseCapcity()
         {
@@ -59,33 +59,46 @@ namespace List_Class_Clone
             for (int i = 0; i < items.Length; i++)
             {
                 array[i] = items[i];
-            } 
+            }
             items = array;
         }
         public void Remove(T itemToRemove)
         {
-            for (int i = 0; i <count; i++)
+            T[] temp = new T[capacity];
+            int j = 0;
+            for (int i = 0; i < count; i++)
             {
-                if (items[i].Equals (itemToRemove))
+                if (!items[i].Equals(itemToRemove))
                 {
-
-                    count--;
+                    
+                    
+                    items[i] = temp[j];
+                    j++;
                 }
-                items[i] = items[i + 1];
+                else if (items[i].Equals(itemToRemove))
+                {
+                    count--;
+
+                }
+
+                items = temp;
+                
+
             }
-            
-            
+
+
+
+            //}
+            //public override string ToString() { }
+
+
+
+
+
+
+
+
 
         }
-
-
-
-
-       
-        
-    
-    
-    
-    
     }
 }

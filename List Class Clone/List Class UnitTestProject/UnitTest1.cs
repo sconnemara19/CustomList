@@ -125,7 +125,7 @@ namespace List_Class_UnitTestProject
             Assert.AreEqual(expected,actual);
         }
         [TestMethod]
-        public void Remove_RemoveFromEmptyList_ToCheckPosition()
+        public void  Remove_RemoveFromEmptyList_ToCheckPosition()
         {
             //arrange
             CustomList<int> testlist = new CustomList<int>();
@@ -145,13 +145,45 @@ namespace List_Class_UnitTestProject
         public void String_ConvertToString()
         {
             //arrange
+            CustomList<int> testlist = new CustomList<int>();
+            string expected = "123";
+            string actual;
+
 
             //act
+            testlist.Add(1);
+            testlist.Add(2);
+            testlist.Add(3);
+
+            actual = testlist.ToString();
 
             //assert
+            Assert.AreEqual(expected, actual);
+        }  
+        [TestMethod]
+        public void String_NumberToString()
+        {   
+            //arrange
+            CustomList<string> testlist = new CustomList<string>();
+            string expected = "HelloWorld";
+            string actual;
+
+            //act
+            testlist.Add("Hello");
+            testlist.Add("World");
+            
+
+            actual = testlist.ToString();
+
+            //assert
+            Assert.AreEqual(expected, actual);
+
+
+
         }
 
 
+       
 
 
     }
