@@ -70,18 +70,11 @@ namespace List_Class_Clone
                 {
 
                     count--;
-                } 
-          
+                }
+                items[i] = items[i + 1];
             }
-            items[i] = items[i + 1];
-            for (int i = 0; i <items.Length; i++)
-            {
-               if (items[i].Equals(itemToRemove))
-               {
-                    //we should start shifting 
-               }
-
-            }
+            
+            
 
         }
 
