@@ -3,3 +3,4 @@ C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List
 C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class Clone\bin\Debug\List Class Clone.pdb
 C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class Clone\obj\Debug\List Class Clone.exe
 C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class Clone\obj\Debug\List Class Clone.pdb
+C:\Users\simon\Desktop\Visual Studio\CustomList\CustomList\List Class Clone\List Class Clone\obj\Debug\List Class Clone.csprojAssemblyReference.cache

@@ -11,13 +11,13 @@ namespace List_Class_Clone
         private T[] items;
         private int count;
         private int capacity;
-
+       
         public CustomList()
         {
             count = 0;
             capacity = 4;
             items = new T[capacity];
-
+           
            
         }
 
@@ -62,8 +62,26 @@ namespace List_Class_Clone
             } 
             items = array;
         }
-        public void Remove(T itemToRemov)
+        public void Remove(T itemToRemove)
         {
+            for (int i = 0; i <count; i++)
+            {
+                if (items[i].Equals (itemToRemove))
+                {
+
+                    count--;
+                } 
+          
+            }
+            items[i] = items[i + 1];
+            for (int i = 0; i <items.Length; i++)
+            {
+               if (items[i].Equals(itemToRemove))
+               {
+                    //we should start shifting 
+               }
+
+            }
 
         }
 
