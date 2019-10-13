@@ -101,7 +101,7 @@ namespace List_Class_UnitTestProject
             testList.Add(19);
             testList.Remove(19);
 
-            int actual = testList[4];
+            int actual = testList[3];
 
             Assert.AreEqual(expected, actual);
         }

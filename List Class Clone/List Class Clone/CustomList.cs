@@ -88,17 +88,20 @@ namespace List_Class_Clone
 
 
 
-            //}
-            //public override string ToString() { }
-
-
-
-
-
-
-
-
+        }
+        public override string ToString()
+        {
 
         }
+
+
+
+
+
+
+
+
+
     }
 }
+
