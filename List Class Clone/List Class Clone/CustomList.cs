@@ -87,11 +87,19 @@ namespace List_Class_Clone
             }
 
 
-
+            
         }
         public override string ToString()
         {
+            string result = "";   
+            for (int i = 0; i < count; i++)
+            {
+             result =  items[i].ToString();
+              
 
+                
+            }
+            return result;
         }
 
 
