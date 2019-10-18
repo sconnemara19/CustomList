@@ -89,7 +89,7 @@ namespace List_Class_UnitTestProject
         {
             //arrange 
             CustomList<int> testList = new CustomList<int>();
-            int expected = 19;
+            int expected = 44;
 
             //act
 
@@ -178,9 +178,26 @@ namespace List_Class_UnitTestProject
             //assert
             Assert.AreEqual(expected, actual);
 
-
-
         }
+        [TestMethod]
+        public void Overload_AddTwoList()
+        {
+            CustomList<int> testlist = new CustomList<int>();
+            CustomList<int> testlist2 = new CustomList<int>();
+            int expected = 123456;
+            int actual;
+            testlist.Add(1);
+            testlist.Add(2);
+            testlist.Add(3);
+            testlist2.Add(4);
+            testlist2.Add(5);
+            testlist2.Add(6);
+
+            actual = testlist + testlist2
+
+            Assert.AreEqual(expected, actual);
+        }
+
 
 
        

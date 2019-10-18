@@ -23,6 +23,7 @@ namespace List_Class_Clone
 
         public T this[int i]
         {
+            //if(i >= 0 && i < count )
             get { return items[i]; }
             set { items[i] = value; }
         }
@@ -64,40 +65,54 @@ namespace List_Class_Clone
         }
         public void Remove(T itemToRemove)
         {
-            T[] temp = new T[capacity];
-            int j = 0;
+            bool found = false;
             for (int i = 0; i < count; i++)
             {
-                if (!items[i].Equals(itemToRemove))
+                if (items[i].Equals(itemToRemove))
                 {
-                    
-                    
-                    items[i] = temp[j];
-                    j++;
+
+
+                    found = true;
+                     
                 }
-                else if (items[i].Equals(itemToRemove))
+                if(found == true)
                 {
-                    count--;
-
+                    items[i] = items[i + 1];
                 }
-
-                items = temp;
-                
 
             }
-
-
-            
+   
         }
         public override string ToString()
         {
             string result = "";   
             for (int i = 0; i < count; i++)
             {
-             result += items[i].ToString( );
+             result += items[i].ToString();
                 
             }
             return result;
+        }
+        public static CustomList<T> operator +(CustomList<T> firstList, CustomList<T> secondList)
+        {
+            CustomList<T> result = new CustomList<T>();
+            for (int i = 0; i < firstList.Count; i++)
+            {
+                result.Add(firstList[i]);
+            }
+            for (int i = 0; i < secondList.Count; i++)
+            {
+                result.Add(secondList[i]);
+            }
+            return result;
+        }
+        public static CustomList<T> operator -(CustomList<T> firstList, CustomList<T> secondList)
+        {
+            for (int i = 0; i < firstList.Count; i++)
+            {
+                firstList.Remove(secondList[i]);
+            }
+            return thirdList;
         }
 
 
