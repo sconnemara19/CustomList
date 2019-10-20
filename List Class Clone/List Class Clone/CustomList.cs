@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace List_Class_Clone
 {
-    public class CustomList<T>
+    public class CustomList<T>: IEnumerable
     {
         private T[] items;
         private int count;
@@ -23,15 +23,45 @@ namespace List_Class_Clone
 
         public T this[int i]
         {
-            //if(i >= 0 && i < count )
-            get { return items[i]; }
-            set { items[i] = value; }
+            get
+            {
+                if (i >= 0 && i < count)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+                
+                return items[i]; 
+            
+            }
+            
+            set 
+            {
+
+                if (i < 0 || i >= count)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
+
+                    items[i] = value; 
+            }
         }
         public int Count
         {
             get
             {
                 return count;
+            }
+        }
+        public int Capacity
+        {
+            get
+            {
+                return capacity;
+            }
+            set
+            {
+                capacity = value;
             }
         }
 
@@ -112,8 +142,9 @@ namespace List_Class_Clone
             {
                 firstList.Remove(secondList[i]);
             }
-            return thirdList;
+            return firstList;
         }
+
 
 
 
