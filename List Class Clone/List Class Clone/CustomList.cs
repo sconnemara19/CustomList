@@ -144,6 +144,21 @@ namespace List_Class_Clone
             }
             return firstList;
         }
+        public CustomList<T> Zip(CustomList<T> firstList, CustomList<T> secondList)
+        {
+            CustomList<T> result = new CustomList<T>();
+            for (int i = 0; i < Count; i++)
+            {
+                result.Add(firstList[i]);
+                result.Add(secondList[i]);
+            }
+            return result;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+
+        }
 
 
 
