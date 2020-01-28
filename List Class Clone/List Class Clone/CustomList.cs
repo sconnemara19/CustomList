@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -138,25 +139,54 @@ namespace List_Class_Clone
         }
         public static CustomList<T> operator -(CustomList<T> firstList, CustomList<T> secondList)
         {
+            T item;
+            CustomList < T > thirdList = new CustomList<T>();
             for (int i = 0; i < firstList.Count; i++)
             {
-                firstList.Remove(secondList[i]);
+                for (int x = 0; x < secondList.Count; x++)
+                {
+                    if (firstList[i].Equals(secondList[x]))
+                    {
+                        item = firstList[i];
+                        firstList.Remove(item);
+                        secondList.Remove(item);
+                        i = 0;
+                        x = 0;
+
+
+
+                    }
+                    else
+                    {
+                        continue;
+                    }
+
+                }
             }
-            return firstList;
+            thirdList = firstList + secondList;
+            return thirdList;
+
+
+            
         }
-        public CustomList<T> Zip(CustomList<T> firstList, CustomList<T> secondList)
+        public CustomList<T> Zip(CustomList<T> List)
         {
             CustomList<T> result = new CustomList<T>();
             for (int i = 0; i < Count; i++)
             {
-                result.Add(firstList[i]);
-                result.Add(secondList[i]);
+                result.Add(items[i]);
+                result.Add(List[i]);
             }
             return result;
         }
 
-        public IEnumerator GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
+            for (int i = 0; i < Count; i++)
+            {
+                yield return items[i];
+            }
+            
 
         }
 
